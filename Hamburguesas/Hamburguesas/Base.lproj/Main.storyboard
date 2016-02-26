@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pais" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ6-Qv-0XX">
+                                <rect key="frame" x="200" y="79" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="I1d-cI-27I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburgesa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0n-aI-L3o">
+                                <rect key="frame" x="175" y="240" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1gN-Oa-o5U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qg-Jh-Qrh">
+                                <rect key="frame" x="201" y="412" width="198" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Efx-08-q2V"/>
+                                    <constraint firstAttribute="width" constant="198" id="fpl-Do-8nZ"/>
+                                </constraints>
+                                <state key="normal" title="Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="getHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2a-vH-BTY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7qg-Jh-Qrh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CJ6-Lh-BxZ"/>
+                            <constraint firstItem="g0n-aI-L3o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="240" id="Y1D-Qr-Fzx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7qg-Jh-Qrh" secondAttribute="bottom" constant="156" id="ZMO-Y2-22a"/>
+                            <constraint firstItem="g0n-aI-L3o" firstAttribute="centerX" secondItem="7qg-Jh-Qrh" secondAttribute="centerX" id="kGc-gz-OaL"/>
+                            <constraint firstItem="kJ6-Qv-0XX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="oVY-45-98n"/>
+                            <constraint firstItem="kJ6-Qv-0XX" firstAttribute="centerX" secondItem="g0n-aI-L3o" secondAttribute="centerX" id="rA1-x6-w5l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hamburgesa" destination="g0n-aI-L3o" id="Nbn-Pg-unE"/>
+                        <outlet property="pais" destination="kJ6-Qv-0XX" id="I1F-HW-vwu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
